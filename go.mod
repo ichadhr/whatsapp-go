@@ -1,4 +1,4 @@
-module github.com/ichadhr/whatsapp
+module github.com/ichadhr/whatsapp-go
 
 go 1.16
 
