@@ -23,7 +23,7 @@ ENV PATH="$PATH:/usr/app/${SERVICE_NAME}" \
 WORKDIR /usr/app/${SERVICE_NAME}
 
 COPY --from=go-builder /usr/src/app/config/ ./config
-COPY --from=go-builder /usr/src/app/main ./go-whatsapp-rest
+COPY --from=go-builder /usr/src/app/main ./whatsapp-go
 
 RUN chmod 777 ./config/stores ./config/uploads
 
@@ -31,4 +31,4 @@ EXPOSE 3000
 HEALTHCHECK --interval=5s --timeout=3s CMD ["sh", "-c", "curl http://127.0.0.1:3000${PRODUCTION_ROUTER_BASE_PATH}/health || exit 1"]
 
 VOLUME ["/usr/app/${SERVICE_NAME}/config/stores","/usr/app/${SERVICE_NAME}/config/uploads"]
-CMD ["go-whatsapp-rest"]
+CMD ["whatsapp-go"]

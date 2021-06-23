@@ -1,6 +1,0 @@
-dist
-vendor
-config/stores/*
-config/uploads/*
-*.DS_Store
-!*.gitkeepdist/

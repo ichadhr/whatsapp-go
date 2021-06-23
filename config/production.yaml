@@ -1,5 +1,5 @@
 ## Server Configuration
-SERVER_NAME: "go-whatsapp-rest"
+SERVER_NAME: "whatsapp-go"
 SERVER_IP: "0.0.0.0"
 SERVER_PORT: "3000"
 SERVER_STORE_PATH: "./config/stores"
