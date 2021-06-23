@@ -1,0 +1,13 @@
+version: '2'
+services:
+  api:
+    image: ichadhr/whatsapp-go
+    container_name: whatsapp-go
+#    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config/stores:/usr/app/config/stores
+      - ./config/uploads:/usr/app/config/uploads
+      - ./config/production.yaml:/usr/app/whatsapp-go/config/production.yaml
+      - ./config/development.yaml:/usr/app/whatsapp-go/config/development.yaml
