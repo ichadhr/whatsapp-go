@@ -3,4 +3,4 @@ vendor
 config/stores/*
 config/uploads/*
 *.DS_Store
-!*.gitkeep
+!*.gitkeepdist/
