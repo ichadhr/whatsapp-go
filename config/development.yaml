@@ -15,7 +15,7 @@ CRYPT_PRIVATE_KEY_FILE: "./config/keys/private.key"
 CRYPT_PUBLIC_KEY_FILE: "./config/keys/public.key"
 
 ## Basic Auth Configuration
-AUTH_BASIC_PASSWORD: "83e4060e-78e1-4fe5-9977-aasdccd46a2b8"
+AUTH_BASIC_PASSWORD: "e37361d8-525a-4556-b0a1-2ed21fe94705"
 
 ## WhatsApp Version Configuration
 WHATSAPP_CLIENT_VERSION_MAJOR: 2
